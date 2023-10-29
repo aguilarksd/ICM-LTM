@@ -67,16 +67,10 @@ The function applies a series of operations on the input image to enhance its co
 This code can be useful for enhancing the local brightness of images, which can improve the visual quality and details in certain scenarios.
 
 Citations:
-If you use this methodology, please cite the following papers where it was proposed:
+1. If you use this methodology, please cite the following papers where it was proposed:
 
-1. K. S. A. Domínguez, M. M. Lavalle, A. M. Salazar and G. R. Salgado,
-//    "Pulsed Neural Net plus Time Matrix for Bright Images Enhancement,"
-//    2019 International Conference on Mechatronics, Electronics and Automotive Engineering (ICMEAE),
-//    Cuernavaca, Mexico, 2019, pp. 79-83, doi: 10.1109/ICMEAE.2019.00022.
+K. S. A. Domínguez, M. M. Lavalle, A. M. Salazar and G. R. Salgado, "Pulsed Neural Net plus Time Matrix for Bright Images Enhancement", 2019 International Conference on Mechatronics, Electronics and Automotive Engineering (ICMEAE), Cuernavaca, Mexico, 2019, pp. 79-83, doi: 10.1109/ICMEAE.2019.00022.
 
 2. If you use this method for medical image enhancement, please also cite:
 
-//    Aguilar Domínguez, Kevin S., Mejía Lavalle, Manuel, & Sossa, Humberto.
-//    "Mejora eficiente de la luminosidad en imágenes del cerebro humano utilizando redes neuronales pulso-acopladas."
-//    Computación y Sistemas, 24(1), 105-120. Epub 27 de septiembre de 2021.
-//    https://doi.org/10.13053/cys-24-1-3187.
+Aguilar Domínguez, Kevin S., Mejía Lavalle, Manuel, & Sossa, Humberto. "Mejora eficiente de la luminosidad en imágenes del cerebro humano utilizando redes neuronales pulso-acopladas", Computación y Sistemas, 24(1), 105-120. Epub 27 de septiembre de 2021. https://doi.org/10.13053/cys-24-1-3187.
