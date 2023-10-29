@@ -65,15 +65,16 @@ The function applies a series of operations on the input image to enhance its co
 6. The modified image will be saved in the same directory as "output_image.jpg."
 
 This code can be useful for enhancing the local brightness of images, which can improve the visual quality and details in certain scenarios.
-// Citations:
-// If you use this methodology, please cite the following papers where it was proposed:
 
-// 1. K. S. A. Domínguez, M. M. Lavalle, A. M. Salazar and G. R. Salgado,
+Citations:
+If you use this methodology, please cite the following papers where it was proposed:
+
+1. K. S. A. Domínguez, M. M. Lavalle, A. M. Salazar and G. R. Salgado,
 //    "Pulsed Neural Net plus Time Matrix for Bright Images Enhancement,"
 //    2019 International Conference on Mechatronics, Electronics and Automotive Engineering (ICMEAE),
 //    Cuernavaca, Mexico, 2019, pp. 79-83, doi: 10.1109/ICMEAE.2019.00022.
 
-// 2. If you use this method for medical image enhancement, please also cite:
+2. If you use this method for medical image enhancement, please also cite:
 
 //    Aguilar Domínguez, Kevin S., Mejía Lavalle, Manuel, & Sossa, Humberto.
 //    "Mejora eficiente de la luminosidad en imágenes del cerebro humano utilizando redes neuronales pulso-acopladas."
