@@ -1,76 +1,41 @@
-# Intersection Cortical Model Luminosity Time Matrix (ICM-LTM)
-Author: KEVIN SALVADOR AGUILAR DOMINGUEZ
+# ICM-LTM Image Enhancement
 
-This code provides a C++ implementation for modifying the luminosity of an input image using the Intersection Cortical Model. The process enhances the local brightness in the image. Here's a description of the code:
+## Introduction
+
+This code is an implementation of the Intersection Cortical Model Luminosity Time Matrix (ICM-LTM) for enhancing the local brightness of images. The ICM-LTM is a method developed by Kevin Salvador Aguilar Domínguez, and it can be useful for improving the visual quality and details in images.
+
+The primary purpose of this code is to enhance the brightness of an input image while preserving the local details. It uses a combination of convolution, thresholding, and time matrices to achieve this enhancement.
 
 ## Dependencies
-- OpenCV: This code relies on OpenCV for image loading, manipulation, and saving.
 
-Make sure you have OpenCV installed on your system. You can typically install it using a package manager or build it from source. For example, on Linux, you can use:
+- OpenCV (Open Source Computer Vision Library)
+- C++ Standard Library
 
-```bash
-sudo apt-get install libopencv-dev
-```
+## Usage
 
-## Function: `ICM-LTM`
+1. Make sure you have OpenCV installed and properly configured.
+2. Replace the `"cm.jpg"` string in the `imread` function with the path to the input image you want to enhance.
+3. Adjust the parameters such as `f`, `g`, `h`, and `y` to fine-tune the enhancement process if needed.
+4. Run the code, and it will process the input image and save the enhanced image as `"output.jpg"`.
 
-```cpp
-Mat ICM-LTM(const Mat& I)
-```
+## Methodology
 
-This function performs the Local Thresholding Method for contrast enhancement. It takes an input image `I` and returns the modified image. The key parameters and steps within this function include:
+The code follows these main steps:
 
-- `Ep`: The number of iterations for contrast enhancement.
-- `W[3][3]`: A 3x3 matrix used as a filter for convolution.
-- `f`, `g`, and `h`: Parameters used in the contrast enhancement process.
+1. Load the input image and normalize it.
+2. Initialize various matrices to store intermediate results.
+3. Apply convolution with a predefined kernel.
+4. Calculate and update the output based on thresholding and time matrices.
+5. Normalize the time matrix (MT).
+6. Perform image output adjustment to enhance local brightness.
+7. Save the enhanced image.
 
-The function applies a series of operations on the input image to enhance its contrast locally. It employs a combination of filtering, thresholding, and iteration.
+## Citations
 
-## Usage in `main`
+If you use this methodology or code in your work, please cite the following papers where it was proposed:
 
-1. The `main` function loads an input image using OpenCV's `imread` function.
+1. K. S. A. Domínguez, M. M. Lavalle, A. M. Salazar and G. R. Salgado, "Pulsed Neural Net plus Time Matrix for Bright Images Enhancement," 2019 International Conference on Mechatronics, Electronics and Automotive Engineering (ICMEAE), Cuernavaca, Mexico, 2019, pp. 79-83, doi: 10.1109/ICMEAE.2019.00022.
 
-2. If the image fails to load, it prints an error message and exits.
+If you use this method for medical image enhancement, please also cite:
 
-3. The `ICM-LTM` function is called with the loaded image, and the resulting image is stored in the `lsImage` variable.
-
-4. The modified image is saved using `imwrite`, and the output is typically named "output_image.jpg."
-
-## How to Use
-
-1. Ensure you have OpenCV installed on your system.
-
-2. Place the code in a C++ source file.
-
-3. Update the image path in the `main` function by modifying the following line:
-
-   ```cpp
-   Mat I = imread("cameraman.jpg", IMREAD_GRAYSCALE); // Load your input image here
-   ```
-
-   Replace `"cameraman.jpg"` with the path to the image you want to process.
-
-4. Compile the code with a C++ compiler (e.g., g++):
-
-   ```bash
-   g++ -o contrast_enhancement contrast_enhancement.cpp `pkg-config opencv --cflags --libs`
-   ```
-
-5. Run the compiled binary:
-
-   ```bash
-   ./contrast_enhancement
-   ```
-
-6. The modified image will be saved in the same directory as "output_image.jpg."
-
-This code can be useful for enhancing the local brightness of images, which can improve the visual quality and details in certain scenarios.
-
-Citations:
-1. If you use this methodology, please cite the following papers where it was proposed:
-
-K. S. A. Domínguez, M. M. Lavalle, A. M. Salazar and G. R. Salgado, "Pulsed Neural Net plus Time Matrix for Bright Images Enhancement", 2019 International Conference on Mechatronics, Electronics and Automotive Engineering (ICMEAE), Cuernavaca, Mexico, 2019, pp. 79-83, doi: 10.1109/ICMEAE.2019.00022.
-
-2. If you use this method for medical image enhancement, please also cite:
-
-Aguilar Domínguez, Kevin S., Mejía Lavalle, Manuel, & Sossa, Humberto. "Mejora eficiente de la luminosidad en imágenes del cerebro humano utilizando redes neuronales pulso-acopladas", Computación y Sistemas, 24(1), 105-120. Epub 27 de septiembre de 2021. https://doi.org/10.13053/cys-24-1-3187.
+2. Aguilar Domínguez, Kevin S., Mejía Lavalle, Manuel, & Sossa, Humberto. "Mejora eficiente de la luminosidad en imágenes del cerebro humano utilizando redes neuronales pulso-acopladas," Computación y Sistemas, 24(1), 105-120. Epub 27 de septiembre de 2021. [https://doi.org/10.13053/cys-24-1-3187](https://doi.org/10.13053/cys-24-1-3187).
