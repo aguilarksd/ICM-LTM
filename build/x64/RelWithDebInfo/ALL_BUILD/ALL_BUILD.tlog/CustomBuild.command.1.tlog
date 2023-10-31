@@ -1,0 +1,10 @@
+^C:\USERS\AGUIL\DOCUMENTS\PORFOLIO\COMPUTER VISION\IMAGE PROCESSIONG\ICM-LTM\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/aguil/Documents/Porfolio/Computer Vision/Image Processiong/ICM-LTM" "-BC:/Users/aguil/Documents/Porfolio/Computer Vision/Image Processiong/ICM-LTM/build" --check-stamp-file "C:/Users/aguil/Documents/Porfolio/Computer Vision/Image Processiong/ICM-LTM/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

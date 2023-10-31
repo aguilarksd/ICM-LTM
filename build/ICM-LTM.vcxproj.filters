@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\aguil\Documents\Porfolio\Computer Vision\Image Processiong\ICM-LTM\ICM-LTM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aguil\Documents\Porfolio\Computer Vision\Image Processiong\ICM-LTM\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C394321E-DD6D-39EB-A8C0-00B9253AF6DF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

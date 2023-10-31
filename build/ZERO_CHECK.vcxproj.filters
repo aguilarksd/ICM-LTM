@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aguil\Documents\Porfolio\Computer Vision\Image Processiong\ICM-LTM\build\CMakeFiles\0dcbda33896fe42de4fff3af27a5bc48\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6F3E89EF-6A45-392C-9A6D-B34E4882D394}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
